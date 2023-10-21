@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import axios from "axios";
 
 export default function Meme() {
   const [allMemes, setAllMemes] = useState([]);
@@ -30,7 +31,7 @@ export default function Meme() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const data = await fetch("https://api.imgflip.com/get_memes");
+      const data = await axios.get("https://api.imgflip.com/get_memes");
       setAllMemes(data.data);
     };
     fetchData();

@@ -9,6 +9,7 @@ body {
 
 main {
   padding: 36px;
+  overflow: hidden;
 }
 
 .header {
@@ -59,6 +60,8 @@ main{
   color: white;
   border: none;
   cursor: pointer;
+  width: 300px;
+  margin: 0 auto;
 }
 
 .meme {
